@@ -6,7 +6,6 @@ $dbname = "login_system";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 $accountID = $_GET['id'];
 
-hellooo
 // query for the name of the instructor
 $query = "SELECT instructorName FROM instructor WHERE id = '$accountID'";
 $result = mysqli_query($conn, $query);
