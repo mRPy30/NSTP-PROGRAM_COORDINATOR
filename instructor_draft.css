@@ -13,7 +13,7 @@
 .header-section{
    position: fixed;
    width: 100vw;
-   height: 70px;
+   height: 11vh;
    left: 0px;
    top: 0px;
    background-color: #6FBB76;
@@ -25,6 +25,7 @@
    width: 80px;
    height: 73px;
    margin-left: 23px;
+   top: 2px;
 }
 .header-section .row .logo .p1 p {
    font-family: 'Abel';
@@ -34,7 +35,7 @@
    line-height: 31px;
    position: fixed;
    left: 104px;
-   top: 10px;
+   top: 12px;
    width: 203px;
    height: 32px;
    display: -webkit-box;
@@ -50,16 +51,16 @@
    line-height: 29px;
    position: fixed;
    left: 104px;
-   top: 32px;
+   top: 35px;
    width: 195px;
    height: 29px;
 }
 .header-section .row .logout {
    position: fixed;
    width: 121px;
-   height: 33px;
-   left: 1260px;
-   top: 15px;
+   height: 34px;
+   left: 87vw;
+   top: 18px;
    font-style: normal;
    font-size: 15px;
    line-height: 24px;
@@ -201,7 +202,7 @@
    }
    .header-section .row button .logout {
     position: absolute;
-    width:300px;
+    width: 200vw;
     height: 33px;
     top: 20px;
     font-family: 'Inter';
