@@ -111,7 +111,7 @@
                         <li><a class="nav-link" href="adminpage.php?page=admin-records"><i class="fa-sharp fa-regular fa-rectangle-list"></i> Records </a></li>
                         <li><a class="nav-link" href="adminpage.php?page=admin-reports"><i class="fa-sharp fa-solid fa-chart-pie"></i> Reports </a></li>
                         <li><a class="nav-link" href="adminpage.php?page=admin-compliance" style="font-size: 15px; margin "><i class="fa-solid fa-clipboard-check"></i> Compliance </a></li>
-                       </ul>
+                       </ul><p>hotdog</p>
                     </div>
                 </div>
             </nav>
