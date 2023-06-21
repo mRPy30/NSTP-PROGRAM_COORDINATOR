@@ -45,26 +45,31 @@ if ($result && mysqli_num_rows($result) > 0) {
 
     <!----------TITLE------------>
     <link rel="shortcut icon" href="logo.png" type="">
-    <title><?php echo "Instructor Page"; ?></title>
+    <title>
+        <?php echo "Instructor Page"; ?>
+    </title>
 
-     <!----------CSS------------>
+    <!----------CSS------------>
     <link rel="stylesheet" href="style_instructor.css">
 
-     <!----------BOOTSTRAP------------>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     
-     <!----------FONTS------------>
+    <!----------BOOTSTRAP------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!----------FONTS------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@400;800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@400;800&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
 
     <!----------ICONS------------>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/11a4f2cc62.js" crossorigin="anonymous"></script>
 
     <!---Inner topbar--->
-     <?php include('topbar.php');?>
-        
+    <?php include('topbar.php'); ?>
+
 </head>
 
 <!----Body----->
@@ -72,8 +77,8 @@ if ($result && mysqli_num_rows($result) > 0) {
 <body>
     <section class="bg-section">
         <!---------Sidebar------------>
-        <?php include('sidebar-instructor.php');?>
-         
+        <?php include('sidebar-instructor.php'); ?>
+
         <!---------End Sidebar--------->
 
         <!--Main Content-->
@@ -83,7 +88,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                     <div class="col-lg-6">
                         <div class="homepage-title">
                             <?php echo " Instructor Name: $instructorName" ?>
-                            <h1>NSTP-
+                            <h1>FILIPINO SUBJECT-
                                 <?php echo "$instructorCourse" ?>
                             </h1>
                         </div>
@@ -106,7 +111,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
         <!-----End Main content------>
