@@ -91,7 +91,7 @@
 /****End Sidebar*****/
 
 </style>
-<!--- KUNWARE NAG TA TYPE AKO RITO NG CODE CTRL S----->
+
  <!---------Sidebar------------>
 <nav class="sidebar navbar-collapsed">
     <div class="navbar-wrapper">
