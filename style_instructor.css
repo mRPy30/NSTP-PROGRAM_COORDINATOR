@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*******BODY******/
+.bg-section{
+    left: 0;
+    min-width: 100rem;
+    height: 60rem;
+    background: #d9d9d9;
+    position: relative;
+  }
+ 
+/****Main Content****/  
+.pcoded-main-content{
+    position: absolute;
+    margin: 0 auto;
+    padding-top: 0;
+    display: block;
+    clear: both;
+    float: unset;
+    right: 0;
+    margin-left: 235px;
+    min-height: 100vh;
+}
+.homepage-header {
+    background: transparent;
+    margin: 30px;
+}
+.pcoded-main-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.homepage-title h1{
+    position: absolute;
+    height: 35px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 48px;
+    color: #000000;
+    margin-left: 140px;
+}
+.homepage-title .offer-box img{
+    width: 50px;
+    min-width: 175px;
+    height: 50px;
+    margin-right: 5px;
+    position: relative;
+    -webkit-transition: all 0.1 0.5s;
+    transition: all 0.1 0.5s;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.homepage-title p{
+    position: absolute;
+    width: 350px;
+    height: 39px;
+    left: 150px;
+    margin-top: 35px;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 39px;
+}
+.col{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.pcoded-main-content .box {
+    min-width: 175px;
+    position: relative;
+    -webkit-transition: all 0.1 0.5s;
+    transition: all 0.1 0.5s;
+}
+.pcoded-main-content .box .content-box{
+    margin: 90px 0px;
+    padding: 15px 15px;
+    background-color: #FFE193;
+    color: #000000;
+    width: 790px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.pcoded-main-content .box .content-box .second{
+    margin-bottom: 60px;
+}
+.pcoded-main-content .box .content-box h4{
+    font-family: 'Inter';
+	font-style: normal;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+}
+.pcoded-main-content .box .content-box span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 39px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******RESPONSIVE**********/
+@media (min-width: 1400px){
+.container {
+    max-width: 1320px;
+}
+}
+@media (max-width: 1120px) {}
+
+@media (min-width: 992px){ 
+    .container {
+        min-width: 1520px;
+    }
+    .custom_nav-container {
+        min-width: 1000px;
+  }
+    .header-section .row .logout {
+        top: 20px;
+        min-width: 1000vh;
+    }
+    .navbar-expand-lg {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    .header-section .row .logout{
+        top: 20px;
+        min-width: 1000vh;
+    }
+    .header-section .row .logo img{
+        width: 80px;
+        height: 70px;
+        position: sticky;
+    }
+}
+@media (min-width: 768px){
+    .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
