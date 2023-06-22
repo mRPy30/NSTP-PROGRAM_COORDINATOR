@@ -136,7 +136,9 @@
     .sidebar .nav .nav-link.active {
         color: #008A0E;
     }
+/*******MAIN CONTENT********/
 
+/******END MAIN CONTENT*********/
 
 /*******RESPONSIVE**********/
 @media (max-width: 992px){ 

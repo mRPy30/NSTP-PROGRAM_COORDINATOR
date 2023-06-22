@@ -78,7 +78,6 @@ if ($result && mysqli_num_rows($result) > 0) {
         <!--Main Content-->
         <div class="pcoded-main-content">
             <div class="container pt-4 px-4">
-                <div class="ser_ben">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="homepage-title">
