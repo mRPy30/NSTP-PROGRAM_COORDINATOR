@@ -79,6 +79,9 @@
 
 /******End Topbar*****/
 
+
+
+
 /*******BODY******/
 .bg-section{
     left: 0;
@@ -87,6 +90,9 @@
     background: #d9d9d9;
     position: relative;
   }
+
+
+
 /*****Sidebar*****/ 
  
 .bg-section .sidebar {
@@ -95,7 +101,7 @@
     left: 0;
     bottom: 0;
     width: 250px;
-    height: 100vh;
+    height: 94vh;
     overflow-y: auto;
     background: rgba(255, 255, 255, 0.92);
    } 
