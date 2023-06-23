@@ -69,15 +69,6 @@
     font-size: 15px;
     line-height: 39px;
 }
-.col{
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
 .pcoded-main-content .box {
     min-width: 175px;
     position: relative;
