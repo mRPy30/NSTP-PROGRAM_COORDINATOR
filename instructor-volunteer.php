@@ -88,7 +88,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                     <div class="col-lg-6">
                         <div class="homepage-title">
                             <?php echo " Instructor Name: $instructorName" ?>
-                            <h1>HELLLO SIR BENTEN-
+                            <h1>
                                 <?php echo "$instructorCourse" ?>
                             </h1>
                         </div>
