@@ -87,10 +87,11 @@ if ($result && mysqli_num_rows($result) > 0) {
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="homepage-title">
-                            <?php echo " Instructor Name: $instructorName" ?>
-                            <h1>
+                        <h1>NSTP -
                                 <?php echo "$instructorCourse" ?>
                             </h1>
+                            <p>Instructor Name:  <?php echo " $instructorName" ?>
+                            </p>
                         </div>
                     </div>
                 </div>
