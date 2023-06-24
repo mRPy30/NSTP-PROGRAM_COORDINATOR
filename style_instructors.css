@@ -7,15 +7,15 @@
 /*******BODY******/
 .bg-section{
     left: 0;
-    min-width: 100rem;
-    height: 60rem;
+    width: 100vw;
+    height: 150vh;
     background: #d9d9d9;
     position: relative;
   }
  
 /****Main Content****/  
 .pcoded-main-content{
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     padding-top: 0;
     display: block;
@@ -54,7 +54,7 @@
     position: relative;
     -webkit-transition: all 0.1 0.5s;
     transition: all 0.1 0.5s;
-    border-radius: 10%;
+    border-radius: 100%;
     overflow: hidden;
 }
 .homepage-title p{

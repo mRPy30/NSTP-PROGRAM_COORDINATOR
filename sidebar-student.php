@@ -1,54 +1,50 @@
 <style>
-*{
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-}
 
-    /*****Sidebar*****/ 
- 
-  .bg-section .sidebar {
-    position: relative;
-    top: 70px;
-    left: 0;
-    bottom: 0;
-    width: 250px;
-    height: 120vh;
-    overflow-y: auto;
-    background: rgba(255, 255, 255, 0.92);
-    
-   } 
-  .sidebar .navbar-nav{
-        margin: 10px 30px;
-    }
-  .sidebar .navbar-nav .pcoded-inner-navbar {
-        flex-direction: column;
-    }
-   .navbar-nav .pcoded-inner-navbar ul{
-        width: 100%;
-    }
-    .nav {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-    }
-    .sidebar .nav .nav-link{
-        padding: 15px 25px;
-        color: #000000;
-        font-size: 17px;
-        font-family: 'Poppins';
-        font-style: normal;
-        line-height: 30px;
-    }
-    .sidebar .nav .nav-link i {
-        margin-right: 5px;
-        font-size: 20px;
-    }
-    .sidebar .nav .nav-link.active {
-        color: #008A0E;
-    }
+
+ /*****Sidebar*****/ 
+  
+ .bg-section .sidebar {
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     width: 250px;
+     height: 140vh;
+     overflow-y: auto;
+     background: rgba(255, 255, 255, 0.92);
+    } 
+   .sidebar .navbar-nav{
+         margin: 10px 30px;
+     }
+   .sidebar .navbar-nav .pcoded-inner-navbar {
+         flex-direction: column;
+     }
+    .navbar-nav .pcoded-inner-navbar ul{
+         width: 100%;
+     }
+     .nav {
+         display: flex;
+         flex-wrap: wrap;
+         padding-left: 0;
+         margin-bottom: 0;
+         list-style: none;
+     }
+     .sidebar .nav .nav-link{
+         padding: 15px 25px;
+         color: #000000;
+         font-size: 17px;
+         font-family: 'Poppins';
+         font-style: normal;
+         line-height: 30px;
+     }
+     .sidebar .nav .nav-link i {
+         margin-right: 5px;
+         font-size: 20px;
+     }
+     .sidebar .nav .nav-link.active {
+         color: #008A0E;
+     }
+
     /*******RESPONSIVE**********/
 
 @media (max-width: 992px){ 

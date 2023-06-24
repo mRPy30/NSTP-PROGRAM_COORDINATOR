@@ -1,33 +1,28 @@
  <style>
- *{
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/******Topbar*******/
-.navbar{
+ /******Topbar*******/
+ .navbar{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.header-section{
-    position: fixed;
-    min-width: 100rem;
-    height: 70px;
+ }
+ .header-section{
+    width: 100vw;
+    height: 11vh;
     left: 0px;
     top: 0px;
-    background: #6FBB76;
+    background-color: #6FBB76;
     align-items: center;
-
-}
-.header-section .row .logo img{
+ }
+ .header-section .row .logo img{
     position: absolute;
     width: 80px;
     height: 73px;
     margin-left: 23px;
-}
-.header-section .row .logo .p1 p {
+    top: 2px;
+ }
+ .header-section .row .logo .p1 p {
     font-family: 'Abel';
     font-style: normal;
     font-weight: 400;
@@ -35,15 +30,15 @@
     line-height: 31px;
     position: fixed;
     left: 104px;
-    top: 10px;
+    top: 12px;
     width: 203px;
     height: 32px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     webkit-box-align: center;
-}
-.header-section .row .logo .p2 p {
+ }
+ .header-section .row .logo .p2 p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -51,32 +46,31 @@
     line-height: 29px;
     position: fixed;
     left: 104px;
-    top: 32px;
+    top: 35px;
     width: 195px;
     height: 29px;
-}
-.header-section .row .logout {
+ }
+ .header-section .row .logout {
     position: fixed;
     width: 121px;
-    height: 33px;
-    left: 1310px;
-    top: 15px;
+    height: 34px;
+    left: 87vw;
+    top: 18px;
     font-style: normal;
     font-size: 15px;
     line-height: 24px;
     max-height: 100%;
     font-family: 'Inter';
     display: inline-block;
-    $zindex-sticky: 1020 !default;
     cursor: pointer;
-}
-.header-section .row .logout .fa{
+ }
+ .header-section .row .logout .fa{
     position: absolute;
     left: 10.62%;
     right: 77.88%;
     top: 33.29%;
     bottom: 28.57%;
-}
+ }
 /*******RESPONSIVE**********/
 @media (max-width: 992px){ 
     .header-section{

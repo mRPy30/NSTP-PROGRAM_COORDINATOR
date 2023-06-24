@@ -8,14 +8,14 @@
     /*****Sidebar*****/ 
  
   .bg-section .sidebar {
-    position: relative;
-    top: 70px;
-    left: 0;
-    bottom: 0;
-    width: 250px;
-    height: 120vh;
-    overflow-y: auto;
-    background: rgba(255, 255, 255, 0.92);
+    position: absolute;
+     top: 0px;
+     left: 0;
+     bottom: 0;
+     width: 250px;
+     height: 150vh;
+     overflow-y: auto;
+     background: rgba(255, 255, 255, 0.92);
    } 
   .sidebar .navbar-nav{
         margin: 10px 30px;

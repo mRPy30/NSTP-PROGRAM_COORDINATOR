@@ -48,7 +48,7 @@ if ($result && mysqli_num_rows($result) > 0) {
     <title><?php echo "Instructor Page"; ?></title>
 
      <!----------CSS------------>
-    <link rel="stylesheet" href="style_instructor.css">
+    <link rel="stylesheet" href="style_instructors.css">
 
      <!----------BOOTSTRAP------------>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -87,15 +87,15 @@ if ($result && mysqli_num_rows($result) > 0) {
                             </h1>
                             <p>Instructor Name:  <?php echo " $instructorName" ?>
                             </p>
-                            <!--<div class="offer-box">
-                            <img src="">
+                            <div class="offer-box">
+                            <img src="INSTRUCTORS & coor/Abayari.jpg">
                             
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
 
-               <!-- <div class="col">
+               <div class="col">
                     <div class="box">
                         <div class="content-box">
                             <h4>2022 - 2023</h4>
@@ -110,7 +110,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                             <span>SEMESTER</span>
                         </div>
                     </div>
-                </div> -->
+                </div>
                
             </div>
         </div>

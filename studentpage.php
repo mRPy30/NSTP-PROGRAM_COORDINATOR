@@ -7,10 +7,10 @@
 
     <!----------TITLE------------>
     <link rel="shortcut icon" href="logo.png" type="">
-    <title><?php echo "Instructor Page"; ?></title>
+    <title><?php echo "Student Page"; ?></title>
 
      <!----------CSS------------>
-    <link rel="stylesheet" href="style_student.css">
+    <link rel="stylesheet" href="style_students.css">
 
      <!----------BOOTSTRAP------------>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -39,7 +39,24 @@
     <!---------End Sidebar--------->
         
         <!--Main Content-->
-        
+        <div class="pcoded-main-content">
+            <div class="container pt-4">
+                <div class="col-lg-12">
+                    <div class="homepage-title">
+                        <h1>PRE PRE PRE</h1>
+                    </div>
+                    <!----box--->
+                        <div class="col">
+                            <div class="box">
+                                <div class="content-box">
+                                    <h3>NSTP 1</h3>
+                                </div>
+                            </div>
+                        </div>    
+                </div>
+            </div>
+        </div> 
+              
     <!-----End Main content------>        
     </section>
 <!-----End of Body------>
