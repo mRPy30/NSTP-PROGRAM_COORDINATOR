@@ -27,20 +27,34 @@
 
      
 <!---Inner topbar--->
-<?php include('topbar.php');?>
-<style type="text/css">
+<header class=" flex-column flex-md-row bd-navbar sticky-top header-section navbar-expand  ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 logo ">
+                   <img src="logo.png" alt="">
+                    <div class=" p1">
+                        <p class="font-weight-normal">CVSU-IMUS CAMPUS</p>
+                    </div>
+                    <div class="p2">
+                        <p>NSTP PROGRAM</p>
+                    </div>
+                    <div class="w-100 logout">
+                        <button type="button" class="btn btn-light rounded btn-logout float-left " a href="logout.php"><i
+                                class="fa-solid fa-arrow-right-from-bracket"></i> LOGOUT </button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <style type="text/css">
                             .container {
-                                position: absolute;
-                                display: flex;
-                                flex-direction: row;
-                                border: 1px solid black;
-                                padding: 10px;
-                                width: 1100px;
-                                height: 700px;
-                                top:450px;
-                                left: 840px;
-                                transform: translate(-50%, -50%);
-                            }  
+                        
+                            /*add flexbox style*/
+
+                            display: flex;
+                            flex-direction: row;
+                            border: 1px black solid;
+                            width: 1100px;
+                            }    
                             
                             .nstp{
                             border: 1px black solid;
@@ -78,16 +92,41 @@
 
                         </style>
 
+
+
+
+
 </head>
 
 <!----Body----->
 <body>
-    <section class="bg-section">
+
    <!---------Sidebar------------>
-   <?php include('sidebar-student.php');?>
+   
+
+   <section class="bg-section">
+   <nav class="sidebar navbar-collapsed" >
+            <div class="navbar-wrapper">
+                    <div class="navbar-nav">
+                       <ul class="nav pcoded-inner-navbar">
+                        <li><a class="nav-link active" aria-current="page" href="studentpage.php"><i class="fa-sharp fa-solid fa-house"></i> Home </a></li>
+                        <li><a class="nav-link" href="studentpage.php?page=student-classes"><i class="fa-solid fa-book"></i> Classes </a></li>
+                        <li><a class="nav-link" href="studentpage.php?page=student-feedback"><i class="fa-solid fa-people-group"></i> Programs </a></li>
+                        <li><a class="nav-link" href="studentpage.php?page=student-programs"><i class="fa-solid fa-comment"></i> Feedback </a></li>
+                       </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>    
     <!---------End Sidebar--------->
-  
-     
+        
+
+        <!--Main Content-->
+        <div class="pcoded-main-content">
+                <div class="container pt-4">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+
                              <!--Main Content codeeeee-->
 
                          <div class="container">
@@ -101,11 +140,7 @@
                             
                              </div>
                          
-                           
-
-
-
-
+                             
 
 
 
@@ -120,9 +155,15 @@
 
                            
                             
+                        </div>
+                    </div>
+                </div>
+            </div>      
 
     <!-----End Main content------>        
     </section>
+
+    
 <!-----End of Body------>
 </body>
 </html>
