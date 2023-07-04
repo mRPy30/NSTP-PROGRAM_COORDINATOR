@@ -3,7 +3,9 @@
     box-sizing: border-box;
     margin: 0;
 }
-
+body{
+    overflow-x: hidden;
+  }
 /*******BODY******/
 .bg-section{
     left: 0;
@@ -20,6 +22,7 @@
     font-family: "Poppins";
     margin-left: 60px;
     position: relative;
+    margin: 20px 220px;
  }
  .pcoded-main-content .box {
     min-width: 175px;
@@ -28,7 +31,7 @@
     transition: all 0.1 0.5s;
 }
 .pcoded-main-content .box .content-box{
-    margin: 50px 180px;
+    margin: 30px 50px;
     padding: 150px 450px;
     background-color: #FFE193;
     color: #000000;

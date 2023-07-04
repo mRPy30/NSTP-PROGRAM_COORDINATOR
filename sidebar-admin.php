@@ -1,25 +1,18 @@
- <style>
-*{
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-}
+<style>
+
 
     /*****Sidebar*****/ 
  
   .bg-section .sidebar {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 250px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 100vh;
-    overflow-y: auto;
-    background: rgba(255, 255, 255, 0.92);
-    transition: 0.5s;
-    display: block;
-    z-index: 1028;
+     top: 0px;
+     left: 0;
+     bottom: 0;
+     width: 250px;
+     height: 140vh;
+     overflow-y: auto;
+     background: rgba(255, 255, 255, 0.92);
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    } 
   .sidebar .navbar-nav{
         margin: 10px 30px;
@@ -39,7 +32,6 @@
     }
     .sidebar .nav .nav-link{
         padding: 15px 25px;
-        
         color: #000000;
         font-size: 17px;
         font-family: 'Poppins';
@@ -53,48 +45,31 @@
     .sidebar .nav .nav-link.active {
         color: #008A0E;
     }
-    .sidebar .nav .nav-link.active:hover {
-	    color: #008A0E;
-	    box-shadow: 2.5px 3px #00000063;
-	}
-    /*******RESPONSIVE**********/
-@media (min-width: 1400px){
-.container {
-    max-width: 1320px;
-}
-}
-@media (max-width: 1120px) {}
+   /*******RESPONSIVE**********/
 
-@media (min-width: 992px){ 
-    .container {
-        min-width: 1520px;
-    }
-    .custom_nav-container {
-        min-width: 1000px;
-  }
-    .header-section .row .logout {
-        top: 20px;
-        min-width: 1000vh;
-    }
-    .navbar-expand-lg {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-    }
-    .header-section .row .logout{
-        top: 20px;
-        min-width: 1000vh;
-    }
-    .header-section .row .logo img{
-        width: 80px;
-        height: 70px;
-        position: sticky;
-    }
+@media (max-width: 992px){ 
+    .bg-section .sidebar {
+    position: relative;
+    top: 70px;
+    left: 0px;
+    bottom: 0;
+    width: 250px;
+    height: 90vh;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.92);
+   } 
 }
-@media (min-width: 768px){
-    .col-lg-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+@media (max-width: 768px){
+    .bg-section .sidebar {
+    position: relative;
+    top: 70px;
+    left: 0px;
+    bottom: 0;
+    width: 250px;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.92);
+   } 
+    
 }
 /****End Sidebar*****/
  </style>
@@ -105,12 +80,12 @@
                     <div class="navbar-nav">
                        <ul class="nav pcoded-inner-navbar">
                         <li><a class="nav-link active" aria-current="page" href="adminpage.php"><i class="fa-sharp fa-solid fa-house"></i> Home </a></li>
-                        <li><a class="nav-link" href="adminpage.php?page=admin-shedule"><i class="fa-sharp fa-regular fa-calendar-days"></i> Schedule </a></li>
-                        <li><a class="nav-link" href="adminpage.php?page=admin-programs"><i class="fa-solid fa-people-group"></i> Programs </a></li>
-                        <li><a class="nav-link" href="adminpage.php?page=admin-feedback"><i class="fa-solid fa-comment"></i> Feedback </a></li>
-                        <li><a class="nav-link" href="adminpage.php?page=admin-records"><i class="fa-sharp fa-regular fa-rectangle-list"></i> Records </a></li>
-                        <li><a class="nav-link" href="adminpage.php?page=admin-reports"><i class="fa-sharp fa-solid fa-chart-pie"></i> Reports </a></li>
-                        <li><a class="nav-link" href="adminpage.php?page=admin-compliance" style="font-size: 15px; margin "><i class="fa-solid fa-clipboard-check"></i> Compliance </a></li>
+                        <li><a class="nav-link" href="admin-shedule.php"><i class="fa-sharp fa-regular fa-calendar-days"></i> Schedule </a></li>
+                        <li><a class="nav-link" href="admin-programs.php"><i class="fa-solid fa-people-group"></i> Programs </a></li>
+                        <li><a class="nav-link" href="admin-feedback.php"><i class="fa-solid fa-comment"></i> Feedback </a></li>
+                        <li><a class="nav-link" href="admin-records.php"><i class="fa-sharp fa-regular fa-rectangle-list"></i> Records </a></li>
+                        <li><a class="nav-link" href="admin-reports.php"><i class="fa-sharp fa-solid fa-chart-pie"></i> Reports </a></li>
+                        <li><a class="nav-link" href="admin-compliance.php" style="font-size: 15px; margin "><i class="fa-solid fa-clipboard-check"></i> Compliance </a></li>
                        </ul>
                     </div>
                 </div>

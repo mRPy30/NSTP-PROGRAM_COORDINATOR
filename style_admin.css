@@ -2,15 +2,974 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    
+}
+body{
+  overflow-x: hidden;
+}
+/*******BODY******/
+.bg-section{
+  left: 0;
+  width: 100vw;
+  height: 140vh;
+  background: #d9d9d9;
+  position: relative;
+}
+
+  /*********Main Content********/
+  
+  /*******LANDING PAGE*******/
+  .pcoded-main-content .total-result{
+    margin: 20px 0px 0px 150px;
+    display: inline-flex;
+  }
+  .pcoded-main-content .total_stud_box {
+    position: relative;
+    height: 90px;
+    width: 300px;
+    box-shadow: -2px 2px 10px -4px rgba(4,4,4,0.82);
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px; /* Add 'px' unit to the padding value */
+    margin: 10px 20px 0px 20px;
+    border-radius: 10px;
+  }
+  
+  .pcoded-main-content .total_stud_box h1 {
+    color: #6FBB76;
+    font: normal 600 30px/normal 'Poppins';
+    margin: 20px 30px 0px 10px;
+  }
+  .pcoded-main-content .total_stud_box h1 i{
+    color: #000000;
+    font-size: 25px;
+    margin: 20px 10px 0px 10px;
+  }
+  
+  .pcoded-main-content .total_stud_box p {
+    color: #000;
+    font-size: 20px;
+    font: normal 400 18px/normal 'Poppins';
+    margin: 0px 30px 0px 30px;
+  }
+/*******************END LANDING********************/
+
+
+
+
+/*****************************RECORDS SECTION************************************/
+    
+/*****START RECORDS********/
+      .pcoded-main-content .rec-content {
+        position: relative;
+        margin: 0px 0px 0px 110px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .pcoded-main-content .rec-content .upperbox { 
+        border-bottom: solid black 1px;
+        height: 50px;
+        width: 110%;
+        display: flex;
+        margin-top: 10px;
+    }
+
+      .pcoded-main-content .rec-content .upperbox h4 {
+        margin-left: 5px;
+        font: normal 400 17px/normal 'Poppins';
+        color: #000;
+    }
+    .pcoded-main-content .rec-content .middlebox {
+      padding: 5px;
+      margin: 20px 0px 0px 100px;
+      height: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+      .pcoded-main-content .rec-content .middlebox .records_box {
+        width: 350px;
+        height: 105px;
+        margin: 20px 20px 0px 20px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .pcoded-main-content .rec-content .middlebox .records_box:hover{
+      background-color: #6FBB76;
+      transition: all .5s ease;
+      transform: scale(0.98);
+      z-index: 2;
+      color: #FFF;
+    }
+    .pcoded-main-content .rec-content .middlebox .records_box h3{
+      font: normal 500 20px/normal 'Poppins';
+      text-align: center;
+      margin: 40px 0px 0px 5px;
+    }
+    .pcoded-main-content .middlebox .records_box  h3 i{
+      color: #000000;
+      font-size: 20px;
+      margin: 0px 10px 0px 0px;
+    }
+    .pcoded-main-content .rec-content .middlebox .records_box:hover i{
+      color: #FFF;
+    }
+    .pcoded-main-content .middlebox .records_box  h3 ion-icon{
+      color: #000000;
+      font-size: 20px;
+      margin: 0px 10px 0px 0px;
+    }
+    .pcoded-main-content .rec-content .middlebox .records_box:hover ion-icon{
+      color: #FFF;
+    }
+
+
+
+
+/****************RECORD CLASSES*******************/
+  .pcoded-main-content .rec-content .upperbox .go-back-button {
+    font-size: xx-large;
+    color: #008A0E;
+    margin: 0px 0px 0px 990px;
+    flex-direction: row;
+    position: absolute;
+  }
+  .pcoded-main-content .rec-content .upperbox h4{
+    font: normal 400 20px/normal 'Poppins';
+    margin: 10px 50px 0px 25px;
+    
+  }
+  .pcoded-main-content .rec-content .middlebox-class {
+    padding: 5px;
+    margin: 20px 0px 0px 100px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .pcoded-main-content .rec-content .middlebox-class a {
+    text-decoration: none;
+  }
+  .pcoded-main-content .rec-content .middlebox-class a .course-box {
+    width: 400px;
+    margin: 5px 20px 0px 22px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .pcoded-main-content .rec-content .middlebox-class a .course-box:hover{
+    background-color: #6FBB76;
+    transition: all .5s ease;
+    transform: scale(0.98);
+    z-index: 2;
+    color: #FFF;
+  }
+  .pcoded-main-content .rec-content .middlebox-class a .course-box p{
+    color: #000;
+    font: normal 500 17px/normal 'Poppins';
+    padding: 35px;
+  }
+  .pcoded-main-content .rec-content .middlebox-class a .course-box p:hover{
+    color: #FFF;
+    transition: all .5s ease;
+    transform: scale(0.98);
+  }
+/**************/
+
+/********* table display ***********/
+      .pcoded-main-content .rec-content .upperbox h3{
+        font: normal 400 17px/normal 'Poppins';
+        margin: 14px 0px 0px 5px;
+        position: relative;
+      }
+      .pcoded-main-content .rec-content .searchbox {
+        margin: 8px 20px 0px 640px;
+        align-items: center;
+        position: absolute;
+      }
+      .pcoded-main-content .rec-content .searchbox i{
+        position: absolute;
+        margin: 8px 0px 0px 10px;
+      }
+      .pcoded-main-content .rec-content .searchbox input[type="text"] {
+        width: 290px;
+        padding: 0px 0px 0px 35px;
+        font-size: 14px;
+        height: 30px;
+        border-radius: 15px;
+        border: 1px solid #000;
+        background: #FFF;
+        font-family: 'Poppins';
+        font-weight: 500;
+      }
+      .pcoded-main-content .rec-content .searchbox input::placeholder{
+        color: #BEBEBF;
+          font-family: 'Poppins';
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          text-align: left;
+      }
+      .pcoded-main-content .rec-content .print i {
+        margin: 10px 20px 0px 700px;
+        font-size: x-large;
+        position: absolute;
+      }
+/********TABLE CLASSES*********/
+      .pcoded-main-content .rec-content .align-tbl{
+        margin: 0px 160px 0px 170px;
+      }
+      .pcoded-main-content .rec-content .align-tbl .tabledisplay {
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 40px;
+        border-radius: 6px;
+        background: #FFF;
+        box-shadow: -2px 2px 15px -4px rgba(4,4,4,0.82);
+      }
+      .pcoded-main-content .rec-content 
+      .align-tbl .tabledisplay #course-table {
+        width: 520px;
+        margin: 10px;
+        
+      }
+      .pcoded-main-content .rec-content 
+      .align-tbl .tabledisplay #course-table th {
+        text-align: left;
+        background-color: #e7e7e7;
+        font: normal 500 14px/normal 'Poppins';
+        
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl .tabledisplay #course-table
+      .edit-button {
+        background-color: #2196F3;
+        border-radius:4px;
+        font: normal 13px/normal 'Poppins';
+        height: 32px;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl .tabledisplay #course-table
+      .edit-button:hover{
+        background-color: #1307f4;
+        transition: 0.4s;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl .tabledisplay #course-table
+      .delete-button {
+        background-color: #f44336;
+        border-radius: 4px;
+        text-decoration: none;
+        font: normal 13px/normal 'Poppins';
+        height: 32px;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl .tabledisplay #course-table
+      .delete-button:hover {
+        background-color: #ff1100;
+        transition: 0.4s;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl .tabledisplay 
+      #course-table tbody tr:hover {
+        background-color: #f5f5f5;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl .tabledisplay 
+      #course-table td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        font: normal 400 14px/normal 'Inter';
+      }
+      .pcoded-main-content .rec-content
+      .lowerbox{
+        margin: 400px 0px 0px 30px; 
+        position: sticky;
+        bottom: 20px;
+        left: 50%;
+      }
+      .pcoded-main-content .rec-content
+      .lowerbox button{
+        width: 120px;
+        transform: translateX(-20%);
+        z-index: 999;
+        background-color: #4CAF50;
+        color: white; border: none;
+        padding: 10px 20px; 
+        text-align: center; 
+        text-decoration: none; 
+        display: inline-block; 
+        font-size: 16px; 
+        margin: 4px 2px; 
+        cursor: pointer;
+      }
+
+        #course-table .edit-button, #course-table .delete-button {
+            padding: 6px 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+        #course-table {
+            width: 90%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        #course-table th,
+        #course-table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #course-table th {
+            background-color: #f2f2f2;
+        }
+
+        .edit-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .delete-button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+       
+        
+        /************ ADD CLASS POPUP FORM *************/
+        #add-section-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 400px 900px rgba(0,0,0,0.28);
+            z-index: 9999;
+        }
+        .form-container {
+            width: 300px;
+        }
+        .form-container h4 {
+            margin-top: 0;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font: normal 400 15px/normal 'Poppins';
+        }
+        .form-container input[type="text"] {
+            width: 95%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-color: none;
+            border-radius: 6px;
+        }
+        .form-container button[type="submit"] {
+            background-color: #6FBB76;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 3px;
+            font: normal 400 13px/normal 'Poppins';
+        }
+        .form-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 400px 900px rgba(0,0,0,0.28);
+            z-index: 9999;
+        } 
+        @media print {
+            .upperbox,
+            .lowerbox,
+            .searchbox
+            .sidebar{
+                display: none;
+            }
+        }
+        #edit-section-popup .cancel-button {
+            background-color: #bababa;
+            color: #ffffff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            margin-left: 100px;
+            border-radius: 3px;
+            font: normal 400 13px/normal 'Poppins';
+        }
+        #edit-section-popup .cancel-button:hover {
+            background-color: #999;
+        }
+/*******************END RECORD CLASSES********************/
+
+
+
+
+/****************RECORD COURSE-CLASSES******************/
+        
+/*****form*****/
+      .pcoded-main-content .rec-content .formbox {
+        width: 95%;
+        margin: 0px 0px 0px 40px;
+      }
+      .pcoded-main-content .rec-content
+      .form-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        width: 290px;
+        height: 230px;
+        position: absolute;
+        margin-top: 25px;
+        box-shadow: 2px 2px 4px 0px rgba(91,91,91, 0.30);
+      }
+      .pcoded-main-content .rec-content
+      .form-container h4{
+        font: normal 500 20px/normal 'Poppins';
+        text-align: center;
+      }
+      .pcoded-main-content .rec-content
+      .form-container label{
+        font: normal 400 13px/normal 'Poppins';
+        text-align: center;
+        margin: 15px 0px;
+      }
+      .pcoded-main-content .rec-content
+      .form-container input{
+        border-color: none;
+        border-radius: 10px;
+      }
+      .pcoded-main-content .rec-content
+      .form-container button{
+        margin-top: 20px;
+      }
+      /******table*****/
+      .pcoded-main-content .rec-content 
+      .align-tbl-course{
+        margin: 0px 0px 0px 350px;
+      }
+      .pcoded-main-content .rec-content 
+      .align-tbl-course .tabledisplay {
+        width: 590px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 30px;
+        border-radius: 6px;
+        background: #FFF;
+        box-shadow: -2px 2px 15px -4px rgba(4,4,4,0.82);
+      }
+      .pcoded-main-content .rec-content 
+      .align-tbl-course .tabledisplay #course-table {
+        width: 520px;
+        margin: 10px;
+      }
+      .pcoded-main-content .rec-content 
+      .align-tbl-course .tabledisplay #course-table th {
+        text-align: left;
+        background-color: #e7e7e7;
+        font: normal 500 14px/normal 'Poppins';
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl-course .tabledisplay #course-table
+      .edit-button {
+        background-color: #2196F3;
+        border-radius:4px;
+        font: normal 13px/normal 'Poppins';
+        height: 32px;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl-course .tabledisplay #course-table
+      .edit-button:hover{
+        background-color: #1307f4;
+        transition: 0.4s;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl-course .tabledisplay #course-table
+      .delete-button {
+        background-color: #f44336;
+        border-radius: 4px;
+        text-decoration: none;
+        font: normal 13px/normal 'Poppins';
+        height: 32px;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl-course .tabledisplay #course-table
+      .delete-button:hover {
+        background-color: #ff1100;
+        transition: 0.4s;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl-course .tabledisplay 
+      #course-table tbody tr:hover {
+        background-color: #f5f5f5;
+      }
+      .pcoded-main-content .rec-content
+      .align-tbl-course .tabledisplay 
+      #course-table td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        font: normal 400 14px/normal 'Inter';
+      }
+/*****************END RECORD COURSE-CLASSES**************/
+
+  
+/****************RECORDS STUDENT****************/
+.pcoded-main-content .rec-content .middlebox-Student {
+  padding: 5px;
+  margin: 20px 0px 0px 100px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.pcoded-main-content .rec-content 
+.middlebox-Student a {
+  text-decoration: none;
+}
+.pcoded-main-content .rec-content 
+.middlebox-Student a .course-box {
+  margin: 10px;
+  width: 400px;
+  margin: 5px 20px 0px 25px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.pcoded-main-content .rec-content
+.middlebox-Student a .course-box:hover{
+  background-color: #6FBB76;
+  transition: all .5s ease;
+  transform: scale(0.98);
+  z-index: 2;
+  color: #FFF;
+}
+.pcoded-main-content .rec-content
+.middlebox-Student a .course-box p{
+  color: #000;
+  font: normal 500 17px/normal 'Poppins';
+  padding: 35px;
+}
+.pcoded-main-content .rec-content
+.middlebox-Student a .course-box p:hover{
+  color: #FFF;
+  transition: all .5s ease;
+  transform: scale(0.98);
+}
+/*******RECORDS STUDENT CLASSES********/
+.pcoded-main-content .rec-content 
+.middlebox-Student-classes {
+  padding: 5px;
+  margin: 20px 0px 0px 120px;
+  width: 800px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.pcoded-main-content .rec-content 
+.middlebox-Student-classes a {
+  text-decoration: none;
+}
+.pcoded-main-content .rec-content 
+.middlebox-Student-classes a .section-box {
+  width: 300px;
+  margin: 5px 30px 0px 30px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.pcoded-main-content .rec-content
+ .middlebox-Student-classes a .section-box:hover{
+  background-color: #6FBB76;
+  transition: all .5s ease;
+  transform: scale(0.98);
+  z-index: 2;
+  color: #FFF;
+}
+.pcoded-main-content .rec-content
+ .middlebox-Student-classes a .section-box p{
+  color: #000;
+  font: normal 500 17px/normal 'Poppins';
+  padding: 35px;
+}
+.pcoded-main-content .rec-content
+.middlebox-Student-classes a .section-box p:hover{
+  color: #FFF;
+  transition: all .5s ease;
+  transform: scale(0.98);
+}
+/*******END RECORDS STUDENT CLASSES********/
+
+/*******RECORDS SECTION DETAILS********/
+/*******END RECORDS SECTION DETAILS********/
+
+
+/*********RECORDS INSTRUCTOR************/
+
+
+.pcoded-main-content .rec-content .middlebox-instructor {
+  padding: 5px;
+  margin: 20px 0px 0px 100px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.pcoded-main-content .rec-content 
+.middlebox-instructor a {
+  text-decoration: none;
+}
+.pcoded-main-content .rec-content 
+.middlebox-instructor a .course-box {
+  margin: 10px;
+  width: 400px;
+  margin: 5px 20px 0px 25px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.pcoded-main-content .rec-content
+.middlebox-instructor a .course-box:hover{
+  background-color: #6FBB76;
+  transition: all .5s ease;
+  transform: scale(0.98);
+  z-index: 2;
+  color: #FFF;
+}
+.pcoded-main-content .rec-content
+.middlebox-instructor a .course-box p{
+  color: #000;
+  font: normal 500 17px/normal 'Poppins';
+  padding: 35px;
+}
+.pcoded-main-content .rec-content
+.middlebox-instructor a .course-box p:hover{
+  color: #FFF;
+  transition: all .5s ease;
+  transform: scale(0.98);
 }
 
 
-/*******BODY******/
-.bg-section{
-    left: 0;
-    min-width: 300vh;
-    height: 100vh;
-    background: #d9d9d9;
-    position: absolute;
+/* INSTRUCTOR LIST*/
+
+#course-table {
+  width: 500px;
+  margin: 10px;
+  
+}
+
+#course-table th, #course-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#course-table th {
+  text-align: left;
+}
+
+#course-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+#course-table .edit-button, #course-table .delete-button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+#course-table .edit-button {
+  background-color: #2196F3;
+  border-radius:4px;
+}
+
+#course-table .delete-button {
+  background-color: #f44336;
+  border-radius:4px;
+}
+
+.upperbox {
+  border-bottom: solid black 1px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Adjust the margin as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+  
+}
+
+.searchbox input[type="text"] {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 25px;
+}
+
+.print button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: black;
+  cursor: pointer;
+  height: 38px;
+  margin-right: 15px;
+}
+
+
+
+.tabledisplay {
+  width: 800px;
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 10px;
+
+}
+
+#instructor-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#instructor-table th,
+#instructor-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#instructor-table th {
+  background-color: #f2f2f2;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+.lowerbox {
+  width: 120px;
+  margin-top: 500px; /* Adjust the margin-top value as needed */
+  position: sticky;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+/* CSS styles for the popup form */
+
+#addForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 400px 900px rgba(0,0,0,0.28);
+  z-index: 9999;
+}
+
+.form-container {
+  width: 300px;
+}
+
+.form-container h4 {
+  margin-top: 0;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.form-container button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+@media print {
+  .upperbox,
+  .lowerbox,
+  .searchbox
+  .sidebar{
+      display: none;
   }
- 
+}
+
+.course{
+  padding: 5px;
+  margin: 5px;
+}
+
+.image-container {
+width: 100px;
+height: 100px;
+border: 1px solid black;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.image-container img {
+width: 100%;
+height: 100%;
+object-fit: fill    ;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+/* Style for the form container */
+.form-container {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Style for the close button */
+.form-container .cancel {
+color: #aaa;
+float: right;
+font-size: 14px;
+font-weight: bold;
+border: none;
+}
+
+/* Style for the close button on hover */
+.form-container .cancel:hover {
+color: black;
+cursor: pointer;
+}
+
+/* Style for the Add button */
+.add-button {
+background-color: #4CAF50;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+}
+
+/* Style for the Add button on hover */
+.add-button:hover {
+opacity: 0.8;
+}
+
+.form-popup select {
+width: 275px;
+border: 1px solid black;
+font-size: 14px;
+border-radius: 5px;
+padding: 12px;
+display: block;
+}
+/**********END RECORDS INSTRUCTOR*************/
+  /*******************END RECORDS********************/
+
+  /************MAIN CONTENTS**************/

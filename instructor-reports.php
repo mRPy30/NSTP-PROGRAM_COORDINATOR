@@ -1,40 +1,3 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "login_system";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-$accountID = $_GET['id'];
-
-
-// query for the name of the instructor
-$query = "SELECT instructorName FROM instructor WHERE id = '$accountID'";
-$result = mysqli_query($conn, $query);
-
-if ($result && mysqli_num_rows($result) > 0) {
-    $row = mysqli_fetch_assoc($result);
-    $instructorName = $row['instructorName'];
-} else {
-    // Handle the case if the instructor is not found
-    $instructorName = "Unknown";
-}
-
-
-
-// query for the instructor handled course
-$query = "SELECT tbl_course.courseName FROM instructor
-                LEFT JOIN tbl_course ON instructor.courseID = tbl_course.courseID
-                WHERE instructor.id = '$accountID'";
-$result = mysqli_query($conn, $query);
-if ($result && mysqli_num_rows($result) > 0) {
-    $row = mysqli_fetch_assoc($result);
-    $instructorCourse = $row['courseName'];
-} else {
-    // Handle the case if the instructor is not found
-    $instructorCourse = "Unknown";
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,10 +11,11 @@ if ($result && mysqli_num_rows($result) > 0) {
     <title><?php echo "Instructor Page"; ?></title>
 
      <!----------CSS------------>
-    <link rel="stylesheet" href="style_instructor.css">
+     <link rel="stylesheet" href="style_instructors.css">
 
      <!----------BOOTSTRAP------------>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      
      <!----------FONTS------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,9 +46,8 @@ if ($result && mysqli_num_rows($result) > 0) {
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="homepage-title">
-                            <?php echo " Instructor Name: $instructorName" ?>
                             <h1>NSTP-
-                                <?php echo "$instructorCourse" ?>
+                                
                             </h1>
                         </div>
                     </div>

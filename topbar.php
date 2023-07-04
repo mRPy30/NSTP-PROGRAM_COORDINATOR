@@ -1,12 +1,6 @@
  <style>
 
  /******Topbar*******/
- .navbar{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
  .header-section{
     width: 100vw;
     height: 11vh;
@@ -14,13 +8,14 @@
     top: 0px;
     background-color: #6FBB76;
     align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
  }
  .header-section .row .logo img{
-    position: absolute;
-    width: 80px;
-    height: 73px;
-    margin-left: 23px;
-    top: 2px;
+   position: fixed;
+   width: 80px;
+   height: 73px;
+   left: 23px;
+   top: 2px;
  }
  .header-section .row .logo .p1 p {
     font-family: 'Abel';
@@ -165,7 +160,7 @@
             window.location.href = "login.php";
         }
     </script>
-    <header class=" flex-column flex-md-row bd-navbar sticky-top header-section navbar-expand  ">
+    <header class=" flex-column flex-md-row bd-navbar sticky-top header-section  ">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-8 logo ">
@@ -176,7 +171,7 @@
                     <div class="p2">
                         <p>NSTP PROGRAM</p>
                     </div>
-                    <div class="w-100 logout">
+                    <div class="logout">
                         <button type="button" class="btn btn-light rounded btn-logout float-left " onclick="goBack()"><i
                                 class="fa-solid fa-arrow-right-from-bracket"></i> LOGOUT </button>
                     </div>

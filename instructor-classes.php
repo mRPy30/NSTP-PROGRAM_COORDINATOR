@@ -1,39 +1,3 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "login_system";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-$accountID = $_GET['id'];
-
-// query for the name of the instructor
-$query = "SELECT instructorName FROM instructor WHERE id = '$accountID'";
-$result = mysqli_query($conn, $query);
-
-if ($result && mysqli_num_rows($result) > 0) {
-    $row = mysqli_fetch_assoc($result);
-    $instructorName = $row['instructorName'];
-} else {
-    // Handle the case if the instructor is not found
-    $instructorName = "Unknown";
-}
-
-
-
-// query for the instructor handled course
-$query = "SELECT tbl_course.courseName FROM instructor
-                LEFT JOIN tbl_course ON instructor.courseID = tbl_course.courseID
-                WHERE instructor.id = '$accountID'";
-$result = mysqli_query($conn, $query);
-if ($result && mysqli_num_rows($result) > 0) {
-    $row = mysqli_fetch_assoc($result);
-    $instructorCourse = $row['courseName'];
-} else {
-    // Handle the case if the instructor is not found
-    $instructorCourse = "Unknown";
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +14,8 @@ if ($result && mysqli_num_rows($result) > 0) {
     <link rel="stylesheet" href="style_instructor.css">
 
      <!----------BOOTSTRAP------------>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      
      <!----------FONTS------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,23 +41,44 @@ if ($result && mysqli_num_rows($result) > 0) {
         <!---------End Sidebar--------->
 
         <!--Main Content-->
-        <div class="pcoded-main-content">
-            <div class="container pt-4 px-4">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="homepage-title">
-                            <?php echo " Instructor Name: $instructorName" ?>
-                            <h1>NSTP-
-                                <?php echo "$instructorCourse" ?>
-                            </h1>
+        <main class="pcoded-main-content">
+    <div class="container pt-4">
+            <div class="col-lg-12">
+                <div class="box-classes">
+                        <div class="box-classes_left">
+                            <i class="fa-solid fa-user"></i>
+                            <h5>Mark B. Villar</h5>
+                            <p>nstp 1</p>
                         </div>
-                    </div>
+                        <div class="box-classes_right">
+                            <h2>80</h2>
+                            <p>STUDENTS</p>
+                        </div>
+                </div>
+                <div class="class_info">
+                    <h3>Subject Code: 1</h3>
+                    <p>UNIT 2.00</p>
                 </div>
 
+                <a href="instructor-classes_section.php">
+                <div class="section_box">
+                    <h4>BSIT 1-C</h4>
+                    <div class="sec_box_inner">
+                        <h5>40</h5>
+                        <p>Number of students</p>
+                        <h5>7:00 - 9:00</h5>
+                        <p>Schedule</p>
+                     </div>
                 </div>
-               
+                </a>
+
+                
+                         
             </div>
         </div>
+    </div>
+</main>
+
         <!-----End Main content------>
     </section>
     <!-----End of Body------>

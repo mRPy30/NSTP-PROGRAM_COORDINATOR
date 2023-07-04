@@ -1,9 +1,5 @@
 <style>
-*{
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-}
+
 
     /*****Sidebar*****/ 
  
@@ -13,9 +9,10 @@
      left: 0;
      bottom: 0;
      width: 250px;
-     height: 150vh;
+     height: 140vh;
      overflow-y: auto;
      background: rgba(255, 255, 255, 0.92);
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    } 
   .sidebar .navbar-nav{
         margin: 10px 30px;
@@ -48,46 +45,32 @@
     .sidebar .nav .nav-link.active {
         color: #008A0E;
     }
-    /*******RESPONSIVE**********/
-@media (min-width: 1400px){
-.container {
-    max-width: 1320px;
+   /*******RESPONSIVE**********/
+
+@media (max-width: 992px){ 
+    .bg-section .sidebar {
+    position: relative;
+    top: 70px;
+    left: 0px;
+    bottom: 0;
+    width: 250px;
+    height: 90vh;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.92);
+   } 
 }
-}
-@media (max-width: 1120px) {}
-
-@media (min-width: 992px){ 
-    .container {
-        min-width: 1520px;
-    }
-    .custom_nav-container {
-        min-width: 1000px;
-  }
-    .header-section .row .logout {
-        top: 20px;
-        min-width: 1000vh;
-    }
-    .navbar-expand-lg {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-    }
-    .header-section .row .logout{
-        top: 20px;
-        min-width: 1000vh;
-    }
-    .header-section .row .logo img{
-        width: 80px;
-        height: 70px;
-        position: sticky;
-    }
-}
-@media (min-width: 768px){
-    }
-
-
-
-
+@media (max-width: 768px){
+    .bg-section .sidebar {
+    position: relative;
+    top: 70px;
+    left: 0px;
+    bottom: 0;
+    width: 250px;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.92);
+   } 
     
+}
 /****End Sidebar*****/
 
 </style>

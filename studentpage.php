@@ -52,7 +52,21 @@
                                     <h3>NSTP 1</h3>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="box-small">
+                                <div class="content-box">
+                                    <h3>NSTP 1</h3>
+                                </div>
+                            </div>
                         </div>    
+                        <div class="col-8">
+                            <div class="box-small">
+                                <div class="content-box">
+                                    <h3>NSTP 1</h3>
+                                </div>
+                            </div>
+                        </div>        
                 </div>
             </div>
         </div> 
