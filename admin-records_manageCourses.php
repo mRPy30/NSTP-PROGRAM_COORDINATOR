@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $conn->query($deleteQuery);
 
         // Redirect back to the page to refresh the course table
-        header('Location: recordsCourses.php');
+        header('Location: admin-records_Courses.php');
         exit();
     }
     // Handle the form submission for editing a course
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $conn->query($updateQuery);
 
         // Redirect back to the page to refresh the course table
-        header('Location: recordsCourses.php');
+        header('Location: admin-records_Courses.php');
         exit();
     }
     // Handle the form submission for adding a new course
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $conn->query($insertQuery);
 
         // Redirect back to the page to refresh the course table
-        header('Location: recordsCourses.php');
+        header('Location: admin-records_Courses.php');
         exit();
     }
 }

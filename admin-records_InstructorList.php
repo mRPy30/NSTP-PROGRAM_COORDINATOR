@@ -109,70 +109,67 @@ if ($result && mysqli_num_rows($result) > 0) {
                     <div class="rec-content print-container">
 
                         <div class="upperbox">
-
                             <h3><?php echo $selectedCourseName; ?></h3>
-                            
-                            <div class="searchbox">
-                            <input  type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search section names...">
-                            </div>
+                                <div class="searchbox">
+                                    <i class="fa-solid fa-magnifying-glass"></i><input  type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search section names...">
+                                </div>
 
-                            <div class="print">
-                            <button onclick="window.print()"> Print</button>
-                            </div>
-
+                                <div class="print">
+                                    <i class="fa-solid fa-print" onclick="window.print()"></i>
+                                </div>
                             <a href="admin-records_Instructor.php" class="go-back-button"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
-
-                    
                         </div>
-                    
-                        <div class="tabledisplay">
 
-                            <div class="course">
-                                <p><?php echo $selectedCourseName . ' Instructors' ; ?></p>
+                        <div class="add-box">
+                            <button class="add-button" id="addInstructorButton">Add Instructor</button>
+                        </div>
+                        
+                        <div class="align-tbl-instructor">
+                            <div class="table-list-display">
+                                <div class="course">
+                                    <p><?php echo $selectedCourseName . ' Instructors' ; ?></p>
+                                </div>
+
+                                <?php if (!empty($instructors)): ?>
+                                <table id="instructor-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Instructor Image</th>
+                                            <th>Instructor ID</th>
+                                            <th>Instructor</th>
+                                            <th>Class Handled</th>
+                                            <th class="col-2" colspan="2">Modify</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($instructors as $instructor): ?>
+                                            <tr>
+                                    
+                                            <td>
+                                                <div class="image-container">
+                                                    <img src="data:image/jpeg;base64,<?php echo base64_encode($instructor['instructorImage']); ?>" alt="Instructor Image">
+                                                </div>
+                                            </td>
+                                                <td><?php echo $instructor['instructorID']; ?></td>
+                                                <td><?php echo $instructor['instructorName']; ?></td>
+                                                <td><?php echo $instructor['sectionName']; ?></td>
+                                                
+
+                                                <td><button class="edit-button" onclick="openEditForm(<?php echo $instructor['instructorID']; ?>)" instructorID="<?php echo $instructor['instructorID']; ?>">Edit</button></td>
+                                                <td><button class="delete-button" onclick="deleteInstructor(<?php echo $instructor['instructorID']; ?>)">Delete</button></td>
+                                                    
+                                            </td>
+
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
+                            <?php else: ?>
+                                <p>No instructors found with the provided course ID.</p>
+                            <?php endif; ?>
                             </div>
 
-                            <?php if (!empty($instructors)): ?>
-                            <table id="instructor-table">
-                                <thead>
-                                    <tr>
-                                        <th>Instructor Image</th>
-                                        <th>Instructor ID</th>
-                                        <th>Instructor</th>
-                                        <th>Class Handled</th>
-                                        <th>Modify</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php foreach ($instructors as $instructor): ?>
-                                        <tr>
-                                
-                                        <td>
-                                            <div class="image-container">
-                                                <img src="data:image/jpeg;base64,<?php echo base64_encode($instructor['instructorImage']); ?>" alt="Instructor Image">
-                                            </div>
-                                        </td>
-                                            <td><?php echo $instructor['instructorID']; ?></td>
-                                            <td><?php echo $instructor['instructorName']; ?></td>
-                                            <td><?php echo $instructor['sectionName']; ?></td>
-                                            <td>
-
-                                            <button class="edit-button" onclick="openEditForm(<?php echo $instructor['instructorID']; ?>)" instructorID="<?php echo $instructor['instructorID']; ?>">Edit</button>
-
-                                            <button class="delete-button" onclick="deleteInstructor(<?php echo $instructor['instructorID']; ?>)">Delete</button>
-                                                
-                                        </td>
-
-                                        </tr>
-                                    <?php endforeach; ?>
-                                </tbody>
-                            </table>
-                        <?php else: ?>
-                            <p>No instructors found with the provided course ID.</p>
-                        <?php endif; ?>
-                        </div>
-
-                        <div class="lowerbox">
-                        <button class="add-button" id="addInstructorButton">Add Instructor</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -183,7 +180,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 
         <!-- Add instructor form (hidden by default) -->
         <div id="addForm" class="form-popup">
-            <form action="manageInstructor.php" method="POST" class="form-container" enctype="multipart/form-data">
+            <form action="admin-records_manageInstructor.php" method="POST" class="form-container" enctype="multipart/form-data">
                 <h2>Add Instructor</h2>
 
                 
@@ -206,7 +203,6 @@ if ($result && mysqli_num_rows($result) > 0) {
                 <label for="password"><b>Password</b></label>
                 <input type="text" placeholder="Enter password" name="password" required>
                 
-                <br> <br>
 
                 <button type="submit" class="btn" onclick="closeAddForm()">Add</button>
                 <button type="button" class="btn cancel" onclick="closeAddForm()">Cancel</button>
@@ -216,7 +212,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 
 <!-- Edit instructor form (hidden by default) -->
 <div id="editForm" class="form-popup">
-  <form action="manageInstructor.php" method="POST" class="form-container" enctype="multipart/form-data">
+  <form action="admin-records_manageInstructor.php" method="POST" class="form-container" enctype="multipart/form-data">
     <h2>Edit Instructor</h2>
 
     <label for="instructorImage"><b>Instructor Image</b></label>
@@ -248,7 +244,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 </div>
 
 
-<form id="deleteInstructorForm" action="manageInstructor.php" method="post">
+<form id="deleteInstructorForm" action="admin-records_manageInstructor.php" method="post">
     <input type="hidden" name="instructorID" id="instructorIDInput">
     <input type="hidden" name="deleteInstructor" value="1">
 </form>

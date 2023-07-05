@@ -9,7 +9,7 @@
      left: 0;
      bottom: 0;
      width: 250px;
-     height: 140vh;
+     height: 170vh;
      overflow-y: auto;
      background: rgba(255, 255, 255, 0.92);
      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);

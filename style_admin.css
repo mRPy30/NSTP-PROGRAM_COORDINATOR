@@ -11,7 +11,7 @@ body{
 .bg-section{
   left: 0;
   width: 100vw;
-  height: 140vh;
+  height: 170vh;
   background: #d9d9d9;
   position: relative;
 }
@@ -70,19 +70,72 @@ body{
         display: flex;
         flex-direction: column;
       }
+      /******STANDARD UPPERBAR********/
       .pcoded-main-content .rec-content .upperbox { 
-        border-bottom: solid black 1px;
+        border-bottom: solid rgb(0, 0, 0) 0.8px;
         height: 50px;
         width: 110%;
         display: flex;
         margin-top: 10px;
+        justify-content: space-between;
+        align-items: center;
     }
-
-      .pcoded-main-content .rec-content .upperbox h4 {
-        margin-left: 5px;
-        font: normal 400 17px/normal 'Poppins';
-        color: #000;
+    .pcoded-main-content .rec-content .upperbox .go-back-button {
+      font-size: xx-large;
+      color: #008A0E;
+      flex-direction: row;
+      margin: 0px 0px 1px 0px;
+      text-decoration: none;
     }
+    .pcoded-main-content .rec-content .upperbox h4{
+      font: normal 400 18px/normal 'Poppins';
+      margin: 10px 50px 8px 25px;
+      
+    }
+    .pcoded-main-content .rec-content .upperbox h3{
+      font: normal 400 18px/normal 'Poppins';
+      margin: 14px 0px 8px 5px;
+      position: relative;
+    }
+    /********* table display ***********/
+      
+    .pcoded-main-content .rec-content .searchbox {
+      margin: 8px 0px 10px 350px;
+      align-items: center;
+      
+    }
+    .pcoded-main-content .rec-content .searchbox i{
+      flex-direction: row;
+      position: absolute;
+      margin: 8px 0px 5px 10px;
+    }
+    .pcoded-main-content .rec-content .searchbox input[type="text"] {
+      width: 290px;
+      padding: 0px 0px 0px 35px;
+      font-size: 14px;
+      height: 30px;
+      border-radius: 15px;
+      border: 1px #000;
+      background: #FFF;
+      box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+      font-family: 'Poppins';
+      font-weight: 500;
+    }
+    .pcoded-main-content .rec-content .searchbox input::placeholder{
+      color: #BEBEBF;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: left;
+    }
+    .pcoded-main-content .rec-content .print i {
+      font-size: x-large;
+      margin: 0px 0px 5px 0px;
+      flex-direction: row;
+    }
+    
+    /*********BOXES***********/
     .pcoded-main-content .rec-content .middlebox {
       padding: 5px;
       margin: 20px 0px 0px 100px;
@@ -132,18 +185,7 @@ body{
 
 
 /****************RECORD CLASSES*******************/
-  .pcoded-main-content .rec-content .upperbox .go-back-button {
-    font-size: xx-large;
-    color: #008A0E;
-    margin: 0px 0px 0px 990px;
-    flex-direction: row;
-    position: absolute;
-  }
-  .pcoded-main-content .rec-content .upperbox h4{
-    font: normal 400 20px/normal 'Poppins';
-    margin: 10px 50px 0px 25px;
-    
-  }
+  
   .pcoded-main-content .rec-content .middlebox-class {
     padding: 5px;
     margin: 20px 0px 0px 100px;
@@ -182,45 +224,7 @@ body{
   }
 /**************/
 
-/********* table display ***********/
-      .pcoded-main-content .rec-content .upperbox h3{
-        font: normal 400 17px/normal 'Poppins';
-        margin: 14px 0px 0px 5px;
-        position: relative;
-      }
-      .pcoded-main-content .rec-content .searchbox {
-        margin: 8px 20px 0px 640px;
-        align-items: center;
-        position: absolute;
-      }
-      .pcoded-main-content .rec-content .searchbox i{
-        position: absolute;
-        margin: 8px 0px 0px 10px;
-      }
-      .pcoded-main-content .rec-content .searchbox input[type="text"] {
-        width: 290px;
-        padding: 0px 0px 0px 35px;
-        font-size: 14px;
-        height: 30px;
-        border-radius: 15px;
-        border: 1px solid #000;
-        background: #FFF;
-        font-family: 'Poppins';
-        font-weight: 500;
-      }
-      .pcoded-main-content .rec-content .searchbox input::placeholder{
-        color: #BEBEBF;
-          font-family: 'Poppins';
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 100%;
-          text-align: left;
-      }
-      .pcoded-main-content .rec-content .print i {
-        margin: 10px 20px 0px 700px;
-        font-size: x-large;
-        position: absolute;
-      }
+
 /********TABLE CLASSES*********/
       .pcoded-main-content .rec-content .align-tbl{
         margin: 0px 160px 0px 170px;
@@ -241,20 +245,35 @@ body{
         margin: 10px;
         
       }
+      .pcoded-main-content .rec-content
+      .align-tbl .tabledisplay #course-table th,
+        #course-table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
       .pcoded-main-content .rec-content 
       .align-tbl .tabledisplay #course-table th {
         text-align: left;
         background-color: #e7e7e7;
         font: normal 500 14px/normal 'Poppins';
-        
+        padding: 10px;
       }
       .pcoded-main-content .rec-content
       .align-tbl .tabledisplay #course-table
       .edit-button {
         background-color: #2196F3;
-        border-radius:4px;
-        font: normal 13px/normal 'Poppins';
-        height: 32px;
+      border-radius: 4px;
+      font: normal 13px/normal 'Poppins';
+      height: 32px;
+      color: #FFF;
+      border: none;
+      padding: 0px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
       }
       .pcoded-main-content .rec-content
       .align-tbl .tabledisplay #course-table
@@ -267,9 +286,15 @@ body{
       .delete-button {
         background-color: #f44336;
         border-radius: 4px;
-        text-decoration: none;
         font: normal 13px/normal 'Poppins';
         height: 32px;
+        color: #FFF;
+        border: none;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
       }
       .pcoded-main-content .rec-content
       .align-tbl .tabledisplay #course-table
@@ -290,75 +315,37 @@ body{
         font: normal 400 14px/normal 'Inter';
       }
       .pcoded-main-content .rec-content
-      .lowerbox{
-        margin: 400px 0px 0px 30px; 
+      .add-box{
+        margin: 20px 0px 0px 800px; 
         position: sticky;
         bottom: 20px;
         left: 50%;
       }
       .pcoded-main-content .rec-content
-      .lowerbox button{
-        width: 120px;
-        transform: translateX(-20%);
+      .add-box button{
+        width: 130px;
+        height: 45px;
         z-index: 999;
         background-color: #4CAF50;
-        color: white; border: none;
+        color: white; 
+        border: none;
         padding: 10px 20px; 
         text-align: center; 
         text-decoration: none; 
         display: inline-block; 
-        font-size: 16px; 
+        font: normal 400 12px/normal 'Inter'; 
         margin: 4px 2px; 
         cursor: pointer;
+        border-radius: 5px;
+      }
+      .pcoded-main-content .rec-content
+      .add-box button:hover{
+        background-color: #008104;
+        transition: 0.4s;
       }
 
-        #course-table .edit-button, #course-table .delete-button {
-            padding: 6px 10px;
-            border: none;
-            background-color: #4CAF50;
-            color: #fff;
-            cursor: pointer;
-        }
-        #course-table {
-            width: 90%;
-            border-collapse: collapse;
-            table-layout: fixed;
-        }
-
-        #course-table th,
-        #course-table td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        #course-table th {
-            background-color: #f2f2f2;
-        }
-
-        .edit-button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-
-        .delete-button {
-            background-color: #f44336;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            cursor: pointer;
-            border-radius: 3px;
-        }
+      
+        
 
        
         
@@ -412,11 +399,23 @@ body{
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: #fff;
-            padding: 20px;
+            padding: 0px;
             border-radius: 5px;
             box-shadow: 0px 0px 400px 900px rgba(0,0,0,0.28);
             z-index: 9999;
         } 
+       /* Additional styling for the form container */
+       .form-container {
+        text-align: center;
+    }
+
+        /* Show the pop-up form */
+        .show {
+            display: block;
+        }
+        .tabledisplay {
+            width: 500px;
+    }
         @media print {
             .upperbox,
             .lowerbox,
@@ -512,9 +511,17 @@ body{
       .align-tbl-course .tabledisplay #course-table
       .edit-button {
         background-color: #2196F3;
-        border-radius:4px;
+        border-radius: 4px;
         font: normal 13px/normal 'Poppins';
         height: 32px;
+        color: #FFF;
+        border: none;
+        padding: 0px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+
       }
       .pcoded-main-content .rec-content
       .align-tbl-course .tabledisplay #course-table
@@ -527,9 +534,15 @@ body{
       .delete-button {
         background-color: #f44336;
         border-radius: 4px;
-        text-decoration: none;
         font: normal 13px/normal 'Poppins';
         height: 32px;
+        color: #FFF;
+        border: none;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
       }
       .pcoded-main-content .rec-content
       .align-tbl-course .tabledisplay #course-table
@@ -691,284 +704,120 @@ body{
 }
 
 
-/* INSTRUCTOR LIST*/
-
-#course-table {
-  width: 500px;
-  margin: 10px;
-  
+/******INSTRUCTOR LIST********/
+.pcoded-main-content .rec-content .align-tbl-instructor{
+  margin: 0px 110px 0px 100px;
 }
-
-#course-table th, #course-table td {
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-#course-table th {
-  text-align: left;
-}
-
-#course-table tbody tr:hover {
-  background-color: #f5f5f5;
-}
-
-#course-table .edit-button, #course-table .delete-button {
-  padding: 6px 10px;
-  border: none;
-  background-color: #4CAF50;
-  color: #fff;
-  cursor: pointer;
-}
-
-#course-table .edit-button {
-  background-color: #2196F3;
-  border-radius:4px;
-}
-
-#course-table .delete-button {
-  background-color: #f44336;
-  border-radius:4px;
-}
-
-.upperbox {
-  border-bottom: solid black 1px;
-  height: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.searchbox {
-  display: flex;
-  align-items: center;
-  margin-left: auto; /* Adjust the margin as needed */
-  margin-right: 20px; /* Adjust the margin as needed */
-  
-}
-
-.searchbox input[type="text"] {
-  width: 300px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  height: 25px;
-}
-
-.print button {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 5px 10px;
-  color: black;
-  cursor: pointer;
-  height: 38px;
-  margin-right: 15px;
-}
-
-
-
-.tabledisplay {
-  width: 800px;
-  border: solid black 1px;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  flex-direction: column;
-  padding: 10px;
-
-}
-
-#instructor-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-
-#instructor-table th,
-#instructor-table td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-#instructor-table th {
-  background-color: #f2f2f2;
-}
-
-.edit-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 3px;
-}
-
-.delete-button {
-  background-color: #f44336;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 3px;
-}
-
-
-.lowerbox {
-  width: 120px;
-  margin-top: 500px; /* Adjust the margin-top value as needed */
-  position: sticky;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-}
-/* CSS styles for the popup form */
-
-#addForm {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 400px 900px rgba(0,0,0,0.28);
-  z-index: 9999;
-}
-
-.form-container {
-  width: 300px;
-}
-
-.form-container h4 {
-  margin-top: 0;
-}
-
-.form-container label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-container input[type="text"] {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-.form-container button[type="submit"] {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 3px;
-}
-
-
-@media print {
-  .upperbox,
-  .lowerbox,
-  .searchbox
-  .sidebar{
-      display: none;
+  .pcoded-main-content .rec-content
+   .align-tbl-instructor
+    .table-list-display .course p{
+    padding: 5px;
+    font: normal 500 17px/normal 'Poppins';
+    margin: 5px;
+    position: absolute;
   }
-}
+  .pcoded-main-content .rec-content
+   .align-tbl-instructor .table-list-display {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 40px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: -2px 2px 15px -4px rgba(4,4,4,0.82);
+  }
+  .pcoded-main-content .rec-content 
+  .align-tbl-instructor #instructor-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 45px 25px 0px 20px;
+  }
+  .pcoded-main-content .rec-content 
+  .align-tbl-instructor #instructor-table th,
+  #instructor-table td {
+      padding: 8px 2px 8px 2px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      font: normal 500 14px/normal 'Poppins';
+  }
 
-.course{
-  padding: 5px;
-  margin: 5px;
-}
+  .pcoded-main-content .rec-content 
+  .align-tbl-instructor #instructor-table th,
+  #instructor-table #instructor-table th {
+      background-color:#e7e7e7;
+      font: normal 500 15px/normal 'Poppins';
+  }
+  .pcoded-main-content .rec-content 
+  .align-tbl-instructor .table-list-display 
+  #instructor-table .image-container {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    }
 
-.image-container {
-width: 100px;
-height: 100px;
-border: 1px solid black;
-border-radius: 50%;
-overflow: hidden;
-}
+    .pcoded-main-content .rec-content 
+  .align-tbl-instructor .table-list-display 
+  #instructor-table .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    }
+    .pcoded-main-content .rec-content
+    .align-tbl-instructor .table-list-display #instructor-table
+    .edit-button {
+      background-color: #2196F3;
+      border-radius: 4px;
+      font: normal 13px/normal 'Poppins';
+      height: 32px;
+      color: #FFF;
+      border: none;
+      padding: 0px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .pcoded-main-content .rec-content
+    .align-tbl-instructor .table-list-display #instructor-table
+    .edit-button:hover{
+      background-color: #1307f4;
+      transition: 0.4s;
+    }
+    .pcoded-main-content .rec-content
+    .align-tbl-instructor .table-list-display #instructor-table
+    .delete-button {
+      background-color: #f44336;
+      border-radius: 4px;
+      font: normal 13px/normal 'Poppins';
+      height: 32px;
+      color: #FFF;
+      border: none;
+      padding: 0px 10px;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .pcoded-main-content .rec-content
+    .align-tbl-instructor .table-list-display #instructor-table
+    .delete-button:hover {
+      background-color: #ff1100;
+      transition: 0.4s;
+    }
+  
 
-.image-container img {
-width: 100%;
-height: 100%;
-object-fit: fill    ;
-}
 
 
-.form-popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-}
+  
 
-/* Style for the form container */
-.form-container {
-  background-color: #fefefe;
-  padding: 20px;
-  border: 1px solid #888;
-  max-width: 500px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-/* Style for the close button */
-.form-container .cancel {
-color: #aaa;
-float: right;
-font-size: 14px;
-font-weight: bold;
-border: none;
-}
 
-/* Style for the close button on hover */
-.form-container .cancel:hover {
-color: black;
-cursor: pointer;
-}
 
-/* Style for the Add button */
-.add-button {
-background-color: #4CAF50;
-color: white;
-padding: 10px;
-border: none;
-cursor: pointer;
-}
 
-/* Style for the Add button on hover */
-.add-button:hover {
-opacity: 0.8;
-}
 
-.form-popup select {
-width: 275px;
-border: 1px solid black;
-font-size: 14px;
-border-radius: 5px;
-padding: 12px;
-display: block;
-}
 /**********END RECORDS INSTRUCTOR*************/
   /*******************END RECORDS********************/
 

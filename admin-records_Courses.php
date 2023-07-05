@@ -102,12 +102,12 @@ if ($result->num_rows > 0) {
                                             <?php if (!empty($courses)): ?>
                                                 <?php foreach ($courses as $course): ?>
                                                     <tr>
-                                                        <td><?php echo $course['courseName']; ?></td>
+                                                            <td><?php echo $course['courseName']; ?></td>
                                                         <td>
-                                                            <button onclick="openForm('<?php echo $course['courseID']; ?>')" class="edit-button">Edit</button>
+                                                            <button class="edit-button" onclick="openForm('<?php echo $course['courseID']; ?>')" >Edit</button>
                                                         </td>
                                                         <td>
-                                                        <button class="delete-button" onclick="deleteCourse(<?php echo $course['courseID']; ?>)">Delete</button>
+                                                            <button class="delete-button" onclick="deleteCourse(<?php echo $course['courseID']; ?>)">Delete</button>
                                                         </td>
                                                     </tr>
                                                 <?php endforeach; ?>
@@ -176,6 +176,7 @@ if ($result->num_rows > 0) {
         function closeForm() {
             document.getElementById("edit-course-popup").classList.remove("show");
         }
+
 
 
           //--------------------------- DELETE CONFIRMATION PROMPT ------------------------------//

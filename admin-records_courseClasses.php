@@ -80,7 +80,7 @@ if ($result->num_rows > 0) {
                     
                     <!-------------------------------------- UPPER PART PAGE --------------------------------------------->
                     
-                        <div class="upperbox">
+                    <div class="upperbox">
                             <h3><?php echo $selectedCourseName; ?></h3>
                             <div class="searchbox">
                             <i class="fa-solid fa-magnifying-glass"></i><input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search section names...">
@@ -90,8 +90,12 @@ if ($result->num_rows > 0) {
                             </div>
                             <a href="admin-records_Classes.php" class="go-back-button"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
                         </div>
-
                     
+                    <!-------------------------------------- ADDITION BUTTON --------------------------------------------->
+                    <div class="add-box">
+                                <button id="add-course-button" class="btn">Add Section</button>
+                            </div>
+
                         <!--------------------------------------TABLE CLASSES --------------------------------------------->
                         <div class="align-tbl">
                             <div class="tabledisplay">
@@ -126,10 +130,7 @@ if ($result->num_rows > 0) {
                             </div>
                         </div>
                         
-                            <!-------------------------------------- ADDITION BUTTON --------------------------------------------->
-                            <div class="lowerbox">
-                                <button id="add-course-button" class="btn">Add Section</button>
-                            </div>
+                            
                             
                         </div>
                     </div>
