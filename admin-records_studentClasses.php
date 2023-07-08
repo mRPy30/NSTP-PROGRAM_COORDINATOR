@@ -1,27 +1,18 @@
 <?php
-    // Database connection
-    $conn = mysqli_connect("localhost", "root", "", "login_system");
+include 'db_connect.php';
 
-    // Count query for student
-    $query = "SELECT COUNT(id) AS total_students FROM student";
-    $result = mysqli_query($conn, $query);
-    $row = mysqli_fetch_assoc($result);
-    $totalStudents = $row['total_students'];
-    
-    // Count query for COURSE
-    $query = "SELECT COUNT(courseID) AS total_courses FROM tbl_course";
-    $result = mysqli_query($conn, $query);
-    $row = mysqli_fetch_assoc($result);
-    $totalCourse = $row['total_courses'];
-   
-    $query = "SELECT COUNT(id) AS total_instructors FROM instructor";
-    $result = mysqli_query($conn, $query);
-    $row = mysqli_fetch_assoc($result);
-    $totalInstructors = $row['total_instructors'];
-   
+// Start the session
+session_start();
 
+// Retrieve the selected course ID and name from session variables
+$courseID = $_GET['courseID'];
+$courseName = $_GET['courseName'];
 
+// Fetch sections for the selected course from the database
+$sql = "SELECT sectionID, sectionName FROM tbl_sections WHERE courseID = '$courseID'";
+$result = $conn->query($sql);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,6 +45,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
+
      
 <!---Inner topbar--->
 <?php include('topbar.php');?>
@@ -68,30 +60,41 @@
 
         <!--Main Content-->
         <main class="pcoded-main-content">
-            <div class="container pt-4">
+            <div class="container">
                 <div class="col-lg-12">
-                    <div class="total-result">
-                        <div class='total_stud_box'>
-                        <h1><i class="fa-solid fa-graduation-cap"></i><?php echo $totalStudents; ?></h1>
-                            <p>Total NSTP Students</p>
+                    <div class="rec-content">
+                        <div class="upperbox">
+                            <h4><?php echo $courseName; ?> Sections</h4>
+                            <a href="admin-records_Student.php" class="go-back-button"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
                         </div>
 
-                        <div class='total_stud_box'>
-                            <h1><i class="fa-solid fa-book"></i><?php echo $totalCourse; ?></h1>
-                            <p>NSTP Program Courses</p>
-                        </div>
+                        <div class="middlebox-Student-classes">
+                            
+                        <?php
+                        // Check if there are any sections
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                $sectionID = $row['sectionID'];
+                                $sectionName = $row['sectionName'];
+                                $encodedSectionName = urlencode($sectionName);
 
-                        <div class='total_stud_box'>
-                            <h1><i class="fa-solid fa-chalkboard-user"></i><?php echo $totalInstructors; ?></h1>
-                            <p>Instructors</p>
+                                echo "<a href='admin-records_sectionStudentDetails.php?sectionID=$sectionID&sectionName=$encodedSectionName'>";
+                                echo "<div class='section-box'>";
+                                echo "<p> $sectionName</p>";
+                                echo "</div>";
+                            }
+                        } else {
+                            echo "No sections found for the selected course.";
+                        }
+                        ?>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>        
-        <!-----End Main content------>        
+        </main>
+                    <!-----End Main content------>        
         
 <!-----End of Body------>
 </section>
 </body>
-</html>
+</html>    

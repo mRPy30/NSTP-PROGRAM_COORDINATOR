@@ -4,7 +4,8 @@ $username = "root";
 $password = "";
 $dbname = "login_system";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
-$accountID = $_GET['id'];
+session_start();
+$accountID = $_SESSION['id'];
 
 
 // query for the instructor handled course
@@ -51,7 +52,8 @@ if ($result && mysqli_num_rows($result) > 0) {
     <link rel="stylesheet" href="style_instructor.css">
 
      <!----------BOOTSTRAP------------>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      
      <!----------FONTS------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,7 +62,11 @@ if ($result && mysqli_num_rows($result) > 0) {
 
     <!----------ICONS------------>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://kit.fontawesome.com/11a4f2cc62.js" crossorigin="anonymous"></script>
+
+    <!----------ALERTS-------------->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!---Inner topbar--->
      <?php include('topbar.php');?>
@@ -77,25 +83,19 @@ if ($result && mysqli_num_rows($result) > 0) {
         <!---------End Sidebar--------->
 
         <!--Main Content-->
-        <div class="pcoded-main-content">
-            <div class="container pt-4 px-4">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="homepage-title">
-                            <h1>NSTP -
-                                <?php echo "$instructorCourse" ?>
-                            </h1>
-                            <p>Instructor Name:  <?php echo " $instructorName" ?>
-                            </p>
-                            <!--<div class="offer-box">
-                            <img src="">
-                            
-                            </div>-->
+        <main class="pcoded-main-content">
+            <div class="container pt-4 ">
+                <div class="col-lg-12">
+                    <div class="instructor_prof">
+                        <h1><?php echo "$instructorCourse" ?></h1>
+                        <p>Instructor Name:  <?php echo " $instructorName" ?>
+                        <div class="profile_img">
+                            <img src="INSTRUCTORS & coor/Abayari.jpg">
                         </div>
                     </div>
                 </div>
-
-               <!-- <div class="col">
+            <!-----2 BOX------->
+               <div class="col">
                     <div class="box">
                         <div class="content-box">
                             <h4>2022 - 2023</h4>
@@ -110,10 +110,10 @@ if ($result && mysqli_num_rows($result) > 0) {
                             <span>SEMESTER</span>
                         </div>
                     </div>
-                </div> -->
+                </div>
                
             </div>
-        </div>
+        </main>
         <!-----End Main content------>
     </section>
     <!-----End of Body------>

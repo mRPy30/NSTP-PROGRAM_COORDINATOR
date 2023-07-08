@@ -1,8 +1,4 @@
  <style>
- *{
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /******Topbar*******/
 .navbar{
@@ -17,7 +13,7 @@
     height: 9vh;
     left: 0px;
     top: 0px;
-    background: #6FBB76;
+    background-color: #6FBB76;
     align-items: center;
     margin-bottom: 10px;
 
@@ -37,15 +33,15 @@
     line-height: 31px;
     position: fixed;
     left: 104px;
-    top: 10px;
+    top: 12px;
     width: 203px;
     height: 32px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     webkit-box-align: center;
-}
-.header-section .row .logo .p2 p {
+ }
+ .header-section .row .logo .p2 p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -53,11 +49,11 @@
     line-height: 29px;
     position: fixed;
     left: 104px;
-    top: 32px;
+    top: 35px;
     width: 195px;
     height: 29px;
-}
-.header-section .row .logout {
+ }
+ .header-section .row .logout {
     position: fixed;
     width: 121px;
     height: 33px;
@@ -70,14 +66,14 @@
     font-family: 'Inter';
     display: inline-block;
     cursor: pointer;
-}
-.header-section .row .logout .fa{
+ }
+ .header-section .row .logout .fa{
     position: absolute;
     left: 10.62%;
     right: 77.88%;
     top: 33.29%;
     bottom: 28.57%;
-}
+ }
 /*******RESPONSIVE**********/
 @media (max-width: 992px){ 
     .header-section{
@@ -174,7 +170,7 @@
     </script>
 
     
-    <header class=" flex-column flex-md-row bd-navbar sticky-top header-section navbar-expand  ">
+    <header class=" flex-column flex-md-row bd-navbar sticky-top header-section  ">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-8 logo ">
@@ -185,7 +181,7 @@
                     <div class="p2">
                         <p>NSTP PROGRAM</p>
                     </div>
-                    <div class="w-100 logout">
+                    <div class="logout">
                         <button type="button" class="btn btn-light rounded btn-logout float-left " onclick="goBack()"><i
                                 class="fa-solid fa-arrow-right-from-bracket"></i> LOGOUT </button>
                     </div>

@@ -246,7 +246,7 @@
     }
     .bg-signup img{
         width:100%;
-        min-height: 90vh;
+        min-height: 95vh;
         background-position: center;
     }
     .bg-signup::before{
@@ -312,7 +312,7 @@
         border-radius: 10px;
         height: 625px;
         padding: 15px 50px;
-        margin: 50px 360px;
+        margin: 30px 20vw;
         width: fit-content;
         align-items: center;
     }
