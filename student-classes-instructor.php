@@ -88,13 +88,12 @@
                             .box {
                             border: 1px black solid;
                             width: 1060px;
-                            height: 380px;
+                            height: 400px;
                             background-color: #FFFFFF;
                             position: absolute;
                             left: 20px;
                             top: 270px;
                             border-radius: 10px;
-                            margin-top:0px;
                             
                             }
 
@@ -144,7 +143,6 @@
 
    <!---------Sidebar------------>
    
-
    <section class="bg-section">
    <nav class="sidebar navbar-collapsed" >
             <div class="navbar-wrapper">
@@ -170,15 +168,7 @@
 
                              <div class="container">
                             
-                            <div class="nstp"><h1>NSTP 1</h1></div>
-
-                            <div class="statusbox"> 
-
                             
-                            <div class="status"><p class="bottom-left">Status</p></div>
-                            <div class="courseandsection"><p class="bottom-left">Course and Section</p></div>
-                            </div>
-                            <div class="box"></div>
                            
                             
                            

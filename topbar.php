@@ -13,12 +13,13 @@
 }
 .header-section{
     position: fixed;
-    min-width: 100rem;
-    height: 70px;
+    min-width: 100vw;
+    height: 9vh;
     left: 0px;
     top: 0px;
     background: #6FBB76;
     align-items: center;
+    margin-bottom: 10px;
 
 }
 .header-section .row .logo img{
@@ -26,6 +27,7 @@
     width: 80px;
     height: 73px;
     margin-left: 23px;
+    top: 2px;
 }
 .header-section .row .logo .p1 p {
     font-family: 'Abel';
@@ -59,15 +61,14 @@
     position: fixed;
     width: 121px;
     height: 33px;
-    left: 1310px;
-    top: 15px;
+    left: 87vw;
+    top: 18px;
     font-style: normal;
     font-size: 15px;
     line-height: 24px;
     max-height: 100%;
     font-family: 'Inter';
     display: inline-block;
-    $zindex-sticky: 1020 !default;
     cursor: pointer;
 }
 .header-section .row .logout .fa{
@@ -171,6 +172,8 @@
             window.location.href = "login.php";
         }
     </script>
+
+    
     <header class=" flex-column flex-md-row bd-navbar sticky-top header-section navbar-expand  ">
         <div class="container-fluid">
             <div class="row">

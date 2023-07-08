@@ -79,7 +79,8 @@
 </style>
 
 <!---------Sidebar------------>
-<nav class="sidebar navbar-collapsed" >
+
+
             <div class="navbar-wrapper">
                     <div class="navbar-nav">
                        <ul class="nav pcoded-inner-navbar">
